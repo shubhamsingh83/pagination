@@ -31,9 +31,9 @@ function App() {
       setCurrentPage(currentPage + 1);
     }
 
-    else {
-      setCurrentPage(1);
-    }
+    // else {
+    //   setCurrentPage(1);
+    // }
   };
 
   const prevPage = () => {
@@ -72,7 +72,7 @@ function App() {
       </table>
       <hr className="divider" /> 
       <div className="pagination">
-        <button onClick={prevPage} disabled={currentPage === 1}>
+        <button onClick={prevPage} >
           Previous
         </button>
         <span style={{ margin: "0 10px" }}>{currentPage}</span>
