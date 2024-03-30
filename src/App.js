@@ -30,6 +30,10 @@ function App() {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
+
+    else {
+      setCurrentPage(1);
+    }
   };
 
   const prevPage = () => {
