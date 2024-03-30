@@ -51,7 +51,7 @@ function App() {
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
-            {/* Add more table headers if needed */}
+           
           </tr>
         </thead>
         <tbody>
@@ -61,18 +61,18 @@ function App() {
               <td>{employee.name}</td>
               <td>{employee.email}</td>
               <td>{employee.role}</td>
-              {/* Add more table cells if needed */}
+             
             </tr>
           ))}
         </tbody>
       </table>
-      <hr className="divider" /> {/* Horizontal line with spacing */}
+      <hr className="divider" /> 
       <div className="pagination">
         <button onClick={prevPage} disabled={currentPage === 1}>
           Previous
         </button>
         <span style={{ margin: "0 10px" }}>{currentPage}</span>
-        <button onClick={nextPage} disabled={currentPage === totalPages}>
+        <button onClick={nextPage} >
           Next
         </button>
       </div>
